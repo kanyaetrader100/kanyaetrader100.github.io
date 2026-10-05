@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOVA | Engineering the impossible</title>
+  <meta name="description" content="Developer portfolio: Python, front-end and projects that shouldn't work yet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Sora:wght@200;300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="spot"></div>
+
+  <header class="bar">
+    <a class="brand" href="#top">NOVA</a>
+    <nav>
+      <a href="#systems">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="status"><i></i>All systems nominal</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Engineering the impossible,<span>one commit at a time.</span></h1>
+        <p class="lead">I'm YOUR NAME, a developer who builds with Python and CSS, and who likes projects that shouldn't work yet.</p>
+        <div class="cta">
+          <a class="btn primary" href="#systems">See what I've built</a>
+          <a class="btn" href="https://github.com/YOUR_USERNAME">Read the source</a>
+        </div>
+        <div class="boot" aria-hidden="true">
+          <p style="--i:0;--n:28">&gt; init nova.core ........ OK</p>
+          <p style="--i:1;--n:29">&gt; calibrating reactor .... OK</p>
+          <p style="--i:2;--n:21" class="last">&gt; all systems nominal</p>
+        </div>
+      </div>
+
+      <div class="reactor" aria-hidden="true">
+        <div class="r r-ticks"></div>
+        <div class="r r-sweep"></div>
+        <div class="r r-coil"></div>
+        <div class="r r-orbit"><span class="orb"></span></div>
+        <div class="core"></div>
+        <span class="hud hud-a">Core stable</span>
+        <span class="hud hud-b">Output 3.2 GW</span>
+      </div>
+    </section>
+
+    <section class="systems" id="systems">
+      <h2>Projects</h2>
+      <a class="row" href="https://github.com/YOUR_USERNAME/nova-profile">
+        <h3>NOVA company profile</h3>
+        <p>An animated landing slide where spheres ride rotating rings like a Ferris wheel. Pure HTML and CSS.</p>
+        <span class="tags">HTML, CSS</span>
+      </a>
+      <a class="row" href="https://github.com/YOUR_USERNAME/house-price-predictor">
+        <h3>House price predictor</h3>
+        <p>A linear regression model that estimates a home's price from its size, built with scikit-learn.</p>
+        <span class="tags">Python, scikit-learn</span>
+      </a>
+      <a class="row" href="https://github.com/YOUR_USERNAME/goal-forecaster">
+        <h3>Goal forecaster</h3>
+        <p>Projects how many goals a player will score from the matches they have played.</p>
+        <span class="tags">Python, pandas</span>
+      </a>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Got a problem worth solving?</h2>
+      <p>Send me the details and I'll reply within a day.</p>
+      <a class="btn primary" href="mailto:you@example.com">Open a channel</a>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 NOVA. Built by hand, no templates.</footer>
+
+  <script>
+    addEventListener('pointermove', e => {
+      const s = document.documentElement.style;
+      s.setProperty('--mx', e.clientX + 'px');
+      s.setProperty('--my', e.clientY + 'px');
+    });
+  </script>
+</body>
+</html>
